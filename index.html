@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="agecalculator.css" />
+  </head>
+  <body>
+    <div class="phone">
+      <div class="content">
+        <header>
+          <label for="day"><small>DAY</small></label>
+          <input type="number" class="day" placeholder="DD" required />
+          <span><small class="emptyerror"></small></span>
+          <label for="month"><small>MONTH</small></label>
+          <input
+            type="number"
+            class="month"
+            placeholder="MM"
+            max="12"
+            required />
+          <span><small class="emptyerror middle"></small></span>
+          <label for="year"><small>YEAR</small></label>
+          <input
+            type="number"
+            class="year"
+            placeholder="YYYY"
+            size="4"
+            required />
+          <span><small class="emptyerror"></small></span>
+        </header>
+        <div>
+          <button class="button"><img src="icon-arrow.svg" alt=""></button>
+          <hr />
+        </div>
+        <main>
+          <div><span class="spanyear">- -</span>years</div>
+          <div><span class="spanmonth">- -</span>month</div>
+          <div><span class="spanday">- -</span>days</div>
+        </main>
+      </div>
+    </div>
+    <script src="agecalculator.js"></script>
+  </body>
+</html>
